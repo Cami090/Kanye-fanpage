@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Kanye West | Fanpage</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: rgba(0,0,0,0.9);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    background: url('Kanye1.jpg') top center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.hero h1:hover {
+    letter-spacing: 5px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+    box-shadow: 0 5px 20px rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* BIO PRO 🔥 */
+#bio h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.bio-container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.bio-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(255,255,255,0.2);
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#albums">Álbumes</a>
+        <a href="#bio">Biografía</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>KANYE WEST</h1>
+    <p>GOAT del rap</p>
+</section>
+
+<section id="albums">
+    <h2>Álbumes icónicos</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="Kanye2.jpg">
+            <p>The College Dropout</p>
+        </div>
+
+        <div class="card">
+            <img src="Kanye3.jpg">
+            <p>Graduation</p>
+        </div>
+
+        <div class="card">
+            <img src="Kanye4.jpg">
+            <p>My Beautiful Dark Twisted Fantasy</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="bio">
+    <h2>Biografía</h2>
+
+    <div class="bio-container">
+        <p>
+Kanye West, también conocido como Ye, es un rapero, productor y diseñador estadounidense que ha marcado profundamente la industria musical y la cultura pop. Comenzó su carrera como productor trabajando con grandes artistas, pero rápidamente destacó como solista con su álbum debut "The College Dropout", el cual revolucionó el hip-hop con un estilo más personal y emocional.
+
+A lo largo de su carrera, ha lanzado álbumes icónicos como "Graduation" y "My Beautiful Dark Twisted Fantasy", siendo reconocido por su innovación, creatividad y constante evolución artística. Además de la música, Kanye ha incursionado en la moda, colaborando con importantes marcas y creando su propia línea.
+
+Su personalidad polémica y su forma única de expresarse lo han mantenido en el centro de atención mediática, convirtiéndolo en una de las figuras más influyentes y debatidas del entretenimiento moderno.
+        </p>
+    </div>
+
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Fanpage no oficial</p>
+</section>
+
+<section>
+    <h2>Términos y Condiciones</h2>
+    <p>Este sitio es una página de fans sin fines oficiales.</p>
+
+    <h2>Política de Privacidad</h2>
+    <p>No recopilamos datos personales.</p>
+</section>
+
+<footer>
+    <p>© 2026 Fanpage Kanye West</p>
+</footer>
+
+</body>
+</html>
+
+
